@@ -3,15 +3,6 @@ import img from "../assets/picture.jpg";
 import { Typewriter } from 'react-simple-typewriter';
 
 const Header = () => {
-  const handleType = (count) => {
-    // access word count number
-    // console.log(count)
-  }
-
-
-  const handleDone = () => {
-    console.log(`Done after 5 loops!`)
-  }
 
   return (
     <section className="w-full overflow-hidden mt-28 flex flex-col-reverse items-center gap-10 md:flex-row justify-evenly ">
@@ -31,8 +22,6 @@ const Header = () => {
               typeSpeed={70}
               deleteSpeed={100}
               delaySpeed={2000}
-              onLoopDone={handleDone}
-              onType={handleType}
             />
           </span>
         </h1>
